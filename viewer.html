@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Viewer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="toolbar">
+  <button onclick="UI.prev()">◀</button>
+  <span id="pageInfo">1 / 1</span>
+  <button onclick="UI.next()">▶</button>
+
+  <button onclick="UI.toggleView()">Toggle View</button>
+  <input id="searchBox" placeholder="Search...">
+  <button onclick="Search.run()">Search</button>
+</div>
+
+<div id="flipbook"></div>
+<div id="pdfView" class="hidden"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://unpkg.com/page-flip/dist/js/page-flip.browser.js"></script>
+
+<script src="js/core.js"></script>
+<script src="js/flipbook.js"></script>
+<script src="js/pdfview.js"></script>
+<script src="js/search.js"></script>
+<script src="js/ui.js"></script>
+
+</body>
+</html>
