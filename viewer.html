@@ -31,3 +31,6 @@
 
 </body>
 </html>
+
+const params = new URLSearchParams(window.location.search);
+Core.init(params.get("file"));
