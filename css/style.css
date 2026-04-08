@@ -1,0 +1,6 @@
+body { margin:0; font-family: Arial; background:#111; color:#fff; }
+#toolbar { padding:10px; background:#222; display:flex; gap:10px; }
+#flipbook, #pdfView { height:90vh; overflow:auto; }
+.hidden { display:none; }
+.page { background:white; }
+canvas { width:100%; }
